@@ -35,7 +35,12 @@ public class UserController {
         data.put("uid", token.getUid());
         data.put("email", token.getEmail());
 
-        ApiFuture<WriteResult> result = db.collection("users/user_data").document(token.getEmail()).set(data);
+        ApiFuture<WriteResult> result =
+                db.collection("users")
+                        .document(token.getEmail())
+                        .collection("user_data")
+                        .document("profile")
+                        .set(data);
 
         return data;
     }
