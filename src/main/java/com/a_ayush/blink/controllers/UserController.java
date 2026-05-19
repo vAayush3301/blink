@@ -30,13 +30,12 @@ public class UserController {
 
         Firestore db = FirestoreClient.getFirestore();
 
-
         Map<String, Object> data = new HashMap<>();
         data.put("name", token.getName());
         data.put("uid", token.getUid());
         data.put("email", token.getEmail());
 
-        ApiFuture<WriteResult> result = db.collection("users").document(token.getEmail()).set(data);
+        ApiFuture<WriteResult> result = db.collection("users/user_data").document(token.getEmail()).set(data);
 
         return data;
     }
