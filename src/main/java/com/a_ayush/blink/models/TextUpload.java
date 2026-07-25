@@ -39,4 +39,8 @@ public class TextUpload {
     public long getExpiryTime() {
         return expiryTime;
     }
+
+    public void setExpiryTime(long expiryTime) {
+        this.expiryTime = expiryTime;
+    }
 }
