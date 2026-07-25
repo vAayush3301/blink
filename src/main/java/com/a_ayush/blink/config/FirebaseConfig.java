@@ -29,6 +29,7 @@ public class FirebaseConfig {
                                             )
                                     )
                             )
+                            .setDatabaseUrl("https://arr-3301-default-rtdb.asia-southeast1.firebasedatabase.app/")
                             .build();
 
             if (FirebaseApp.getApps().isEmpty()) {
