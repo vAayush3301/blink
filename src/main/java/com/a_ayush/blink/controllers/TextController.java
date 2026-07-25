@@ -4,7 +4,6 @@ import com.a_ayush.blink.CodeGenerator;
 import com.a_ayush.blink.models.TextUpload;
 import com.google.firebase.database.*;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
